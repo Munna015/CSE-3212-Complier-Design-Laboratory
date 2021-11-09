@@ -1,0 +1,153 @@
+##   Name:Mahmudul Hasan munna
+     Roll:1707015
+	 Institute:KUET ##
+import abc.h
+import k0_.h
+begin:
+    #Variable declaration and initialization
+	m_int aa:=11,bbb,cd,de,ef;
+	cd:=13;
+	m_float x1:=4.8,x2;
+	x2:=5.9;
+	m_char pp:='a',q;
+	m_string str1:="This is munna",str2;
+	str2:="This is KUET";
+	
+	take<-bbb;
+	show->aa;
+	show->bbb;
+	show->cd;
+	show->x1;
+	show->x2;
+	show->pp;
+	show->str1;
+	show->str2;
+	
+	show->"I am munna";
+	
+	#Arithmetic expressions
+	de:=aa add cd mult 2;
+	show->de;
+	ef:= 12 add 20 sub 8 mod 3;
+	show->ef;
+	m_float flt:=cd sub aa div 5;
+	show->flt;
+	m_float yy:= aa div 2 add 10;
+	show->yy;
+	x2:=x1 add x2;
+	show->x2;
+	m_float v1:= 10.58 div 2.05 add 7.7;
+	show->v1;
+	q:='c'add 2;
+	show->q;
+	
+
+	
+	#Inbuilt arithmetic functions
+	m_int pow,n;
+	pow:=[2^3];    #Power function
+	show->pow;
+    _sin[90]; #Sin function
+	_cos 0;         #Cos function
+	_tan[45];       #Tan function
+	_log10[100];    #LOg function
+	_log[16];
+	
+	m_int h:=[cd sub aa ];
+	#IF-ELSE IF-ELSE BLOCK
+	either[h !=? 2 $$ 3>?1]:
+	<<
+	  3^2;
+	>>
+	
+	either pow <? 1 :
+	<<
+	   10 add 6;
+	   
+	>>
+	either or [ pow >? 1 $$ pow<=? 8]:
+	<<
+	   10 sub 4;
+	  
+	   
+	>>
+	or:
+	<<
+	  10 mult 2;
+	>>
+	
+	m_int val:= 1 add 2 mult 2;
+	#Nested IF-ELSE BLOCK 
+	either[aa !=? cd]:
+    <<
+        either[ val>? 6]:
+        <<
+          3 add 8; 
+		>>
+		either or[ val<? 3]:
+        <<
+          5 mult 2; 
+		>>
+		or:
+        <<
+          3 sub 1;
+		>>
+	>>
+	or:
+	<<
+        either[ val <=? 4]:
+        <<
+         5 mult 2;
+		>>
+		or:
+        <<
+          10  div 2;
+		>>
+	>>
+	
+	#for loop
+	m_int i;
+	for i in [1,10,3+]:
+	<<
+	
+	     12 add 7;
+		 
+	>>
+	m_float k;
+	for k in [20.0,10.5,2.4-]:
+	<<
+	     2 add 3;
+	>>
+	show->k;
+	
+	
+	
+	#Inbuilt functions
+	_evenodd[15];
+	_factorial[5];
+	_sum[20];
+	_gcd[10,2];
+	_lcm[5,4];
+	
+	
+	#Switch case
+	switch [2]:
+	<<
+	[1] 1 add 2;
+	[2] 2 add 3;
+	[*] 10 sub 2;
+	>>
+	
+	m_int j:=5;
+	while[j <=? 10 ]{2+}:
+	<<
+	  1 add 5;
+	>>
+	show->j;
+	m_char v:='e';
+	while[v >=? 'b' ]{2-}:
+	<<
+	  1 mult 2;
+	>>
+	show->v;
+end
